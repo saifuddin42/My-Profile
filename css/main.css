@@ -814,8 +814,8 @@ input::-moz-focus-inner {
 }
 
 .display-1 {
-  font-size: 4rem;
-  line-height: 1.333;
+  font-size: 3.5rem;
+  line-height: 1.4;
 }
 
 .section-intro {
@@ -921,7 +921,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width: 400px) {
   .section-intro {
-    margin-bottom: 9.6rem;
+    margin-bottom: 0;
   }
 
   .section-intro::before {
@@ -1191,6 +1191,12 @@ input::-moz-focus-inner {
   }
 }
 
+@media screen and (max-width: 1200px){
+  .header-nav-wrap {
+    padding-left: 6.2rem;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .header-content .btn {
     height: 4.8rem !important;
@@ -1434,7 +1440,7 @@ input::-moz-focus-inner {
 }
 
 .intro-social li {
-  padding-left: 0;
+  padding-left: 3px;
 }
 
 .intro-social li::after {
@@ -1484,7 +1490,7 @@ input::-moz-focus-inner {
   height: 6.4rem;
   width: 6.4rem;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   margin: 0;
   position: relative;
 }
@@ -1659,6 +1665,7 @@ html.no-csstransitions .intro-content {
 @media screen and (max-width: 1300px) {
   .intro-content {
     max-width: 1200px;
+    padding-top: 18vh; 
   }
 
   .intro-content h1 {
@@ -1686,6 +1693,10 @@ html.no-csstransitions .intro-content {
     height: 6rem;
     width: 6rem;
   }
+
+  .intro-social li {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1699,6 +1710,10 @@ html.no-csstransitions .intro-content {
 }
 
 @media screen and (max-width: 800px) {
+  .s-intro {
+    background-image: none !important;
+  }
+
   .intro-content h1 {
     font-size: 4.8rem;
   }
@@ -1719,15 +1734,23 @@ html.no-csstransitions .intro-content {
 
 @media screen and (max-width: 600px) {
   .intro-content h1 {
-    font-size: 4.6rem;
+    font-size: 3.4rem;
   }
 
   .intro-content h1 br {
     display: none;
   }
 
+  .intro-content h3 {
+    font-size: 1.85rem;
+  }
+
   .intro-social {
-    font-size: 1rem;
+    margin-top: 5.5rem;
+  }
+
+  .intro-social li {
+    font-size: 0.8rem;
   }
 
   .intro-scroll {
@@ -1891,7 +1914,7 @@ html.no-csstransitions .intro-content {
 
 .position__timeframe {
   font-family: "Gothic A1", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 2rem;
   text-transform: uppercase;
@@ -1941,8 +1964,12 @@ html.no-csstransitions .intro-content {
 }
 
 @media screen and (max-width: 800px) {
+  .s-about__section--profile p {
+    margin-bottom: 3rem;
+  }
+
   .s-about__section--profile {
-    padding-top: 20rem;
+    padding-top: 9rem;
     padding-bottom: 0;
     min-height: 0;
   }
@@ -1974,7 +2001,7 @@ html.no-csstransitions .intro-content {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 0;
   background-color: #ffffff;
   position: relative;
@@ -2193,7 +2220,7 @@ html.no-csstransitions .intro-content {
 
 @media screen and (max-width: 800px) {
   .s-portfolio {
-    padding-top: 20rem;
+    padding-top: 7rem;
   }
 
   .folio-item__thumb a::after {
@@ -2210,6 +2237,10 @@ html.no-csstransitions .intro-content {
 }
 
 @media screen and (max-width: 600px) {
+  .s-portfolio {
+    padding-top: 4.5rem;
+  }
+
   .folio-item__thumb a::after {
     font-size: 2rem;
   }
@@ -2417,6 +2448,10 @@ html.no-csstransitions .intro-content {
   position: relative;
 }
 
+.s-footer .display-1 {
+  font-weight: 400;
+}
+
 .s-footer .right-vert-line {
   background-color: #f9861a;
 }
@@ -2473,6 +2508,10 @@ html.no-csstransitions .intro-content {
   padding-left: 0;
 }
 
+.footer-contact-block__list a {
+  margin-right: 1.5rem;
+}
+
 .footer-contact-block__header {
   color: rgba(255, 255, 255, 0.4);
   margin: 0;
@@ -2499,6 +2538,12 @@ html.no-csstransitions .intro-content {
 .ss-copyright span {
   font-size: 1.5rem;
   display: inline-block;
+}
+
+.ss-copyright svg {
+  fill: #000000;
+  margin-left: 2px;
+  margin-bottom: -2px;
 }
 
 .ss-copyright span::after {
@@ -2571,6 +2616,12 @@ html.no-csstransitions .intro-content {
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
+ @media screen and (max-width: 1600px) {
+  .s-footer .footer-email-us {
+    margin-top: 5rem;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .ss-go-top {
     right: 6rem;
@@ -2579,6 +2630,23 @@ html.no-csstransitions .intro-content {
   .ss-go-top a {
     height: 6rem;
     width: 6rem;
+  }
+
+  .s-footer .display-1 {
+    font-size: 3.5rem;
+  }
+
+  .s-footer .footer-contacts {
+    margin-top: 6.5rem;
+    margin-left: 4%;
+  }
+
+  .s-footer .footer-contact-block p, li {
+    font-size: 2.8rem;
+  }
+
+  .ss-copyright span {
+    font-size: 1.2rem;
   }
 }
 
@@ -2597,11 +2665,28 @@ html.no-csstransitions .intro-content {
 
 @media screen and (max-width: 800px) {
   .s-footer {
-    padding-top: 20rem;
+    padding-top: 8rem;
   }
 
-  .ss-copyright {
-    padding-right: 10rem;
+  .s-footer .display-1 {
+    font-size: 3rem;
+    /* line-height: 1.4; */
+  }
+
+  .s-footer .footer-email-us a {
+    margin-bottom: 0;
+  }
+
+  .s-footer .footer-contacts {
+    margin-top: 5.5rem;
+  }
+
+  .s-footer .footer-contact-block p, li {
+    font-size: 2.2rem;
+  }
+
+  .s-footer__bottom {
+    margin-top: 4rem;
   }
 
   .ss-go-top {
@@ -2615,9 +2700,13 @@ html.no-csstransitions .intro-content {
 }
 
 @media screen and (max-width: 600px) {
-  .ss-copyright {
-    padding-right: 8rem;
+  .s-footer .display-1 {
+    font-size: 2.5rem;
   }
+
+  /* .ss-copyright {
+    padding-right: 8rem;
+  } */
 
   .ss-copyright span {
     display: block;
@@ -2629,6 +2718,6 @@ html.no-csstransitions .intro-content {
 
   .ss-go-top {
     right: 2.4rem;
-    bottom: 4rem;
+    bottom: 8rem;
   }
 }

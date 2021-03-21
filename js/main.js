@@ -33,12 +33,12 @@
             $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
-            $("#loader").fadeOut("slow", function() {
+            // $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(300).fadeOut("slow");
-            }); 
+                // $("#preloader").delay(300).fadeOut("slow");
+            // }); 
             
-            // for hero content animations 
+            // for intro content animations 
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
 
@@ -62,9 +62,9 @@
     * -------------------------------------------------- */
     const ssMoveHeader = function () {
 
-        const $hero = $('.s-hero'),
+        const $intro = $('.s-intro'),
               $hdr = $('.s-header'),
-              triggerHeight = $hero.outerHeight() - 170;
+              triggerHeight = $intro.outerHeight() - 170;
 
 
         $WIN.on('scroll', function () {
@@ -311,7 +311,6 @@
             }
         });
     };
-
 
 
    /* initialize
